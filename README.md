@@ -14,7 +14,7 @@
   * `git remote rename <whatever org remote is named> upstream`
   * For example: `git remote rename origin upstream`
 * Team members work on their own forks of HPotter-Spring-2020 repos
-* Code enteres HPotter-Spring-2020 repos **only by pull request** with review and approval by at least one other team member
+* Code enters HPotter-Spring-2020 repos **only by pull request** with review and approval by at least one other team member
 * When feasible, branch names on personal forks should start with the Jira issue (e.g. `HS-4-telnet`) to tie code to tracked work
 
 ### Pull requests
