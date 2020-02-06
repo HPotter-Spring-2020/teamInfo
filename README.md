@@ -41,6 +41,6 @@
 
 ## Technologies
 * [Jira](https://gouda.msudenver.edu/jira/browse/HS)
-* [Slack](https://drb80.slack.com/)
+* [Slack](https://drb80.slack.com/archives/CCJRBT03Z)
 * [Travis CI](https://travis-ci.org/HPotter-Spring-2020/HPotter)
 * [Codecov](https://codecov.io/gh/HPotter-Spring-2020)
