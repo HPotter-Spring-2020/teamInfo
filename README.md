@@ -25,7 +25,9 @@
 * Merging or rebasing to `dev` is suggested to spot conflicts before opening a PR. On the feature branch...
   * `git pull origin dev` OR
   * `git pull --rebase origin dev`
-* Resolve any conflicts on your personal branch 
+* Resolve any conflicts on your personal branch
+* Merge pull requests using the Squash and Merge option
+* Delete the feature branch after it has been merged
 
 # General Info
 
