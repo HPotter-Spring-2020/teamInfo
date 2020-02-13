@@ -6,8 +6,7 @@
 * This team's **official** repositories are the org level repos at [HPotter-Spring-2020](https://github.com/HPotter-Spring-2020)
 * Each repo has branches `dev`, `master`, and feature branches
   * Feature branches are created by team members
-  * `dev` is the destination for feature branches. Feature braches are merged to `dev` via pull requests **with review**
-  * `master` stays in sync with [Dr. Beaty's master branch](https://github.com/drsjb80/HPotter/tree/master). Our team only updates this branch by pulling from Dr. Beaty's master and pushing to our team master
+  * `dev` and `master` branches stay in sync with [Dr. Beaty's master branch](https://github.com/drsjb80/HPotter/tree/master). Our team only updates these branches by pulling from Dr. Beaty's dev and master and pushing to our team's dev and master
 
 ### Working with team repos
 * Work on the team repo. Do not create your own fork.
@@ -15,19 +14,18 @@
   1. `git checkout dev`
   1. `git pull origin dev`
   1. `git checkout -b hs-4-myFeatureBranchName` 
-* When possible, start feature branch names with the associated Jira issue id (e.g. `hs-4-telnet`). This easily ties to branch to all the info about it on Jira. 
-* Code moves from feature branches to `dev` **only by pull request** with review and approval by at least one other team member.
+* When possible, start feature branch names with the associated Jira issue id (e.g. `hs-4-telnet`). This easily ties branches to all the info about the issue on Jira. 
+* Code moves from feature branches to `drsjb80/<remote>/dev` via pull request to be merged by Dr. Beaty
+* After Dr. Beaty merges a pull requst, we must update the org branch to sync with `drsjb80/<remote>/dev`
 
 ### Pull requests
-* Code only enters `dev` via pull request.
-* At least one other team member must review and approve pull requests before they can be merged.
-* You may not merge your own pull request.
-* Merging or rebasing to `dev` is suggested to spot conflicts before opening a PR. On the feature branch...
-  * `git pull origin dev` OR
-  * `git pull --rebase origin dev`
-* Resolve any conflicts on your personal branch
-* Merge pull requests using the Squash and Merge option
-* Delete the feature branch after it has been merged
+* Pull requests to `ourOrg/<repo>/dev` may be opened to allow the team to review before sending to Dr. Beaty.
+* *HOWEVER*, pull requests to `ourOrg/<repo>/dev` should not be merged
+* When confident the PR is ready for Dr. Beaty's review, open a PR to `drsjb80/<remote>/dev`
+* If and when Dr. Beaty merges PRs to his repos, the changes are official. We need to:
+  1. update `ourOrg/<repo>/<branch>` to reflect the offical changes
+  1. Close the PR to `ourOrg/<repo>/<branch>` **without merging** (the code comes from Dr. Beaty's merge)
+  1. Delete the feature branch from remote. The code is now safely in the official repo
 
 # General Info
 
